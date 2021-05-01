@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./../../static/favicon/apple-touch-icon-180x180.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./../../static/favicon/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../../static/favicon/favicon-96x96.png">
+  <meta name="msapplication-square310x310logo" content="./../../static/favicon/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#666666">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+  <link href="./../../static/css/style.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>    
+  <script src="./../../static/js/script.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1>{{product}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <p>
+          {{description}}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2>Environments</h2>
+        <table>
+          <thead>
+          </thead>
+          <tbody>
+            {{#hyperlinks}}
+              <tr>
+                <th>{{name}}</th>
+                <td><a class="button" target="blank" href="{{url}}">{{url}}</a></td>
+              </tr>
+            {{/hyperlinks}}                       
+          </tbody>
+        </table>    
+      </div>    
+      <div class="column">
+        <h2>Informations</h2>
+        <table>
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Author</th>
+              <td>{{author}}</td>
+            </tr>
+            <tr>
+              <th>Contact</th>
+              <td>{{contact}}</td>
+            </tr>
+            <tr>
+              <th>Version</th>
+              <td>{{version}}</td>
+            </tr>
+            <tr>
+              <th>Licence</th>
+              <td>{{licence}}</td>
+            </tr>
+            <tr>
+              <th>Repository</th>
+              <td>{{repository}}</td>
+            </tr>                                
+          </tbody>
+        </table>        
+      </div>  
+    </div>      
+  </div>
+</body>
+</html>
