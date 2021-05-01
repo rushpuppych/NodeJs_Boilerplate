@@ -3,3 +3,14 @@
 
 # NodeJs_Boilerplate
 Node JS Boilerplate Application
+
+# Install
+```
+npm install
+```
+
+# Run
+```
+npm run dev
+npm run start
+```
